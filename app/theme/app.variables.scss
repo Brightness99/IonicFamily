@@ -32,9 +32,9 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
   favorite:   #69BB7B, 
-  cus-blue:  	#0a9fcb
+  cus-blue:  	#0a9fcb,
+  cus-white: 	#fff
 );
-
 
 ion-navbar {
 	.bar-button {
@@ -52,3 +52,4 @@ ion-navbar {
 		}
 	}
 }
+

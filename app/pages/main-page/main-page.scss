@@ -1,0 +1,28 @@
+
+.main-page-top-content {
+	background-color: #0a9fcb;
+	color: white;
+	padding: 0 12px 12px 12px;
+	height: 125px;
+	flex: none;
+
+	ion-segment {
+		padding: 0 12px;
+
+		.segment-button {
+			border: solid 1px;
+			height: 3.8rem;
+			line-height: 3.6rem;
+			opacity: 1;
+		}
+		.segment-button:nth-of-type(1) {
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+		}
+		.segment-button:nth-of-type(3) {
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px;
+		}
+
+	}
+}
