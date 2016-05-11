@@ -29,3 +29,40 @@
 
 	}
 }
+.main-page-center-content {
+	padding: 12px;
+	
+	scroll-content {
+		margin: 12px;
+		padding-top: 12px;
+		
+		.collection-container {
+		    display: flex;
+		    flex-wrap: wrap;
+		    margin-left: -.6rem;
+			margin-right: -.6rem;
+		    
+		    .collection-item {
+		    	width: calc(50% - 1.2rem); 
+		    	margin: .6rem;
+
+		    	ion-card-content {
+		    		padding: 8px 16px 27px 16px;
+
+			    	ion-card-title {
+			    		font-size: 1.2rem;
+			    		font-weight: 400;
+			    		padding: 0;
+			    	}
+			    	p {
+			    		font-size: .8rem;
+			    		line-height: .8rem;
+			    		font-weight: 300;
+			    		margin: 0;
+			    	}
+			    }
+			}
+		}
+	}
+}
+

@@ -22,28 +22,18 @@
 	<div text-center class="f14 mg-t-20">Want to change the way you are viewing families?</div>
 	<div text-center class="f12 mg-t-5">Click 'View' for more ways to discover & connect with families.</div>
 </ion-content>
-<ion-content class="getting-started pd-12 cus-gray-bg">
-	<ion-list>
-
-		<ion-card>
+<ion-content class="getting-started cus-gray-bg main-page-center-content">
+	<div class="collection-container ">
+		<ion-card  *ngFor="#item of familyCardList" (click)="familyCardTapped($event, item)" class="collection-item">
 			<img src="img/family1-medium.png"/>
 			<ion-card-content>
-				<ion-card-title>
-					Nine Inch Nails Live
+				<ion-card-title text-center>
+					{{item.family_title}}
 				</ion-card-title>
-				<p>
-					The most popular industrial group ever, and largely
-					responsible for bringing the music to a mass audience.
-				</p>
+				<p text-center> 
+					{{item.location}}
+				</p> 
 			</ion-card-content>
 		</ion-card>
-
-		<button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
-		<ion-icon name="{{item.icon}}" item-left></ion-icon>
-		{{item.title}}
-		<div class="item-note" item-right>
-		{{item.note}}
-		</div>
-		</button>
-	</ion-list>
+	</div>
 </ion-content>
