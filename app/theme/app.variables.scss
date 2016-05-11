@@ -34,9 +34,12 @@ $colors: (
   favorite:   #69BB7B, 
   cus-blue:  	#0a9fcb,
   cus-white: 	#fff
+  cus-gray:		#e1e1e1;
 );
 
+.cus-gray-bg 	{background-color: #e1e1e1; }
 
+//--------- Font Setting ------------//
 .f20 {	font-size: 2.0rem 	}
 .f18 {	font-size: 1.8rem	}
 .f16 {	font-size: 1.6rem	}
@@ -44,11 +47,16 @@ $colors: (
 .f12 {	font-size: 1.2rem	}
 .f10 {	font-size: 1.0rem	}
 
+//--------- Margin Setting -----------//
 .mg-t-5 	{margin-top: 5px; }
 
 .mg-t-20	{margin-top: 20px; }
 
+//---------- Padding Setting ------------//
+.pd-12	{padding: 12px; }
 
+
+//---------- Component Styling ----------//
 ion-navbar {
 	.bar-button {
 		text-transform: capitalize;
@@ -64,5 +72,15 @@ ion-navbar {
 			font-weight: 400;
 		}
 	}
-}
+} 
+
+
+
+
+
+
+
+
+
+
 
