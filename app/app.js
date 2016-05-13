@@ -1,6 +1,10 @@
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {MainPage} from './pages/main-page/main-page'
+import {MainPage} from './pages/main-page/main-page';
+import {MyFamiliesPage} from './pages/myfamilies-page/myfamilies-page';
+import {ConnectionsPage} from './pages/connections-page/connections-page';
+import {SettingsPage} from './pages/settings-page/settings-page';
+
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 
@@ -24,6 +28,9 @@ class MyApp {
     // set our app's pages
     this.pages = [
       {title: 'Main Page', component: MainPage},
+      {title: 'My Families', component: MyFamiliesPage},
+      {title: 'Connections', component: ConnectionsPage},
+      {title:  'Settings', component: SettingsPage},
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];

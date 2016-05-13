@@ -1,0 +1,25 @@
+<ion-navbar *navbar  cus-blue>
+  	<button menuToggle>
+    	<ion-icon name="menu"></ion-icon>
+  	</button>
+  	<ion-title>Connections</ion-title>
+	<ion-buttons end>
+		<button >View</button>
+	</ion-buttons>
+</ion-navbar>
+<ion-content class="cus-gray-bg">
+	<ion-list>
+		<ion-item class="avatar-item" *ngFor="#item of familiesList">
+			<ion-avatar item-left>
+				<img src="{{item.family_pic}}">
+			</ion-avatar>
+			<div class="f14">{{item.family_title}}</div>
+			<div class="f10 cus-dark">{{item.message}}</div>
+			<div class="arrow-btn-wrapper">
+				<div class="f10 cus-dark">{{item.time}}</div>
+				<span><ion-icon name="arrow-forward"></ion-icon></span>
+			</div>
+		</ion-item>
+	</ion-list> 
+ 
+</ion-content>

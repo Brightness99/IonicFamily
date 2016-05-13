@@ -11,6 +11,26 @@
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+ion-navbar {
+	.bar-button-menutoggle {
+		ion-icon {
+			padding: 0 1.2rem;
+		}
+	}
+}
+
+.main-page-top-content {
+	ion-segment[cus-white] {
+		.segment-button.segment-activated {
+			color: white;
+			background-color: #0a9fcb;
+		}
+	}
+}
+
+
+
+
 
 // Ionic iOS Sass
 // --------------------------------------------------

@@ -37,7 +37,11 @@ $colors: (
   cus-gray:		#e1e1e1
 );
 
+.cus-blue	{color: #0a9fcb;}
+
 .cus-gray-bg 	{background-color: #e1e1e1; }
+
+.cus-dark 		{color: #666666; }
 
 //--------- Font Setting ------------//
 .f20 {	font-size: 2.0rem 	}
@@ -46,6 +50,7 @@ $colors: (
 .f14 {	font-size: 1.4rem	}
 .f12 {	font-size: 1.2rem	}
 .f10 {	font-size: 1.0rem	}
+.f8  {	font-size: 	.8rem	}
 
 //--------- Margin Setting -----------//
 .mg-t-5 	{margin-top: 5px; }
@@ -73,6 +78,100 @@ ion-navbar {
 		}
 	}
 } 
+
+ion-content {
+	ion-list {
+		border-bottom: solid 1px #666666;
+		
+		.avatar-item {
+			min-height: 9rem;
+			background-color: #e1e1e1;
+			border-bottom: solid 1px #666666;
+			padding-left: 26px;
+			position: relative;
+
+			ion-avatar {
+				img {
+					max-width: 6.6rem;
+					max-height: 6.6rem;
+					border-radius: 3.3rem;
+				} 
+			}
+			ion-label {
+				white-space: normal;
+				div {
+					margin-top: .9rem;
+					margin-bottom: .9rem;
+				}
+				.arrow-btn-wrapper {
+					position: absolute;
+					top: .5rem;
+					right: 1.2rem;
+
+					div {
+						float: left;
+					}
+					span {
+						float: left;
+						margin-top: 0.7rem;
+						margin-left: 0.7rem;
+
+						ion-icon {
+							font-size: 1.6rem;
+							color: #666666;
+						}
+					}
+				}
+			}
+			.close-btn {
+				position: absolute;
+				left: 0;
+				top: -.2rem;
+				padding-right: 1rem;
+				padding-bottom: 1rem;
+
+				ion-icon {
+					font-size: 1.4rem;
+					color: black;
+					font-weight: 600;
+				}
+			}
+			.chat-btn-wrapper {
+				position: absolute;
+				right: 1.2rem;
+				top: 2.4rem;
+				button {
+					margin-bottom: 0;
+
+					ion-icon {
+						background-image: url("../../img/chat-icon-blue.png");
+						width: 2.4rem;
+						height: 2.4rem;
+						background-size: 100%;
+						background-repeat: no-repeat;
+						background-position: center center;
+					}
+				}
+			}
+		}
+
+		.arrow-icon-item {
+			padding-left: 1.2rem;
+			background-color: #e1e1e1;
+			border-bottom: solid 1px #666666;
+
+			.input-wrapper {
+				ion-label {
+					font-size: 1.4rem;
+				}
+			}
+			ion-icon {
+				font-size: 1.6rem;
+				padding-top: 0.2rem;
+			}
+		}
+	}
+}
 
 
 
