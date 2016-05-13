@@ -1,0 +1,159 @@
+
+.message-content {
+	scroll-content {
+		padding: 1rem 0;
+
+		.message-time {
+			margin: .5rem 0;
+			text-align: center;
+			font-size: 1.2rem;
+			color: #666666;
+		}
+		ion-list {
+			border: none;
+
+			.message-item {
+				min-height: auto;
+				padding: .4rem 2rem;
+				align-items: inherit;
+				border: none;
+
+				ion-avatar {
+					margin: 0;
+					min-width: 6.6rem;
+					min-height: 6.6rem;
+
+					img {
+						max-width: 6.6rem;
+						max-height: 6.6rem;
+						border-radius: 3.3rem;
+					} 
+				}
+				.item-inner {
+					border-bottom: none;
+					ion-label {
+						margin: 0;
+
+						.recived-message, .sent-message {
+							position: relative;
+							height: auto;
+							padding-bottom: 1rem;
+							white-space: normal;
+							border: none;
+
+							.talktext {
+								padding: 1rem;
+								text-align: left;
+								line-height: 1.5rem;
+								border-radius: 0.6rem;
+								width: auto;
+								display: inline-block;
+
+								p {
+									-webkit-margin-before: 0rem;
+									-webkit-margin-after: 0rem;
+									font-size: 1rem;
+									line-height: 1.6rem;
+								}
+							}
+
+						}
+						.recived-message:before,
+						.sent-message:before {
+							content: ' ';
+							position: absolute;
+							width: 0;
+							height: 0;
+							left: .9rem;
+							right: auto;
+							top: auto;
+							bottom: 0;
+
+						}
+						.recived-message:after,
+						.sent-message:after {
+							content: ' ';
+							position: absolute;
+							width: 0;
+							height: 0;
+							top: auto;
+							bottom: 0;
+							border: .5rem solid;
+							
+						}
+						.recived-message:after {
+							border-color: #97d6e6 transparent transparent #97d6e6;	
+							left: 1.7rem;
+							right: auto;
+						}
+						.sent-message:after {
+							border-color: #bbc2c4 #bbc2c4 transparent transparent;
+							left: auto;
+							right: .9rem;
+						}
+						.recived-message {
+							padding-left: 0.8rem;
+							.talktext {
+								background-color: #97d6e6;
+								p {
+									color: #237185;
+								}
+							}
+						}
+						.sent-message {
+							float: right;
+							width: calc(100% - 12rem);
+							.talktext {
+								background-color: #bbc2c4;
+								p {
+									color: #3f4e52;
+								}
+							}
+						}
+					}
+				}
+			}
+			.message-item ∂right ion-label {
+				text-align: right;
+			}
+		}
+	}
+}
+
+
+
+.message-toolbar {
+	position: relative;
+
+	.toolbar-background {
+		background-color: #e1e1e1;
+	}
+	.toolbar-content {
+		ion-item {
+			background-color: #e1e1e1;
+			padding-left: 1rem;
+			padding-right: 4rem;
+			padding-top: .5rem;
+
+			input {
+				margin: .5rem .8rem .8rem 0;
+				width: calc(100% - .5rem);
+				padding: 1rem;
+				background-color: white;
+				border-radius: .4rem;
+				color: #666;
+				font-size: 1.2rem;
+			}
+		}
+		.send-btn {
+			position: absolute;
+			top: .6rem;
+			right: 1.2rem;
+			background-image: url('../../img/send-icon.png');
+			background-size: 80%;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+		}
+	}
+}

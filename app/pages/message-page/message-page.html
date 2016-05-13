@@ -1,0 +1,38 @@
+<ion-navbar *navbar  cus-blue>
+  	<ion-title>Josh & Robin</ion-title>
+</ion-navbar>
+<ion-content class="message-content">
+	<div class="message-time">Today 9:02 PM</div>
+	<ion-list>
+		<ion-item class="message-item" *ngFor="#item of messageList">
+			<div class="flex" *ngIf="item.type=='recived'">
+				<ion-avatar item-left>
+					<img src="{{item.picture_url}}">
+				</ion-avatar>
+				<div>
+					<div class="f10 recived-message">
+						<div class="talktext">
+							<p>{{item.message}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right"  *ngIf="item.type=='sent'">
+				<div class="f10 sent-message">
+					<div class="talktext">
+						<p>{{item.message}}</p>
+					</div>
+				</div>
+			</div>
+		</ion-item> 
+	</ion-list>
+
+</ion-content> 
+<ion-toolbar position="bottom" class="message-toolbar">
+	<ion-item class="cus-gray-bg">
+		<ion-input type="text" placeholder="Type Your Messages..."></ion-input>
+	</ion-item>
+	<button class="send-btn" clear>
+	</button>
+</ion-toolbar>

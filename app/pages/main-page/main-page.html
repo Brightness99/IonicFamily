@@ -9,7 +9,7 @@
 </ion-navbar> 
 <ion-content class="main-page-top-content">
 	<ion-segment  cus-white>
-		<ion-segment-button value="search" class="first" >
+		<ion-segment-button value="search" class="first" (click)="gotoSearchPage()">
 			Search
 		</ion-segment-button>
 		<ion-segment-button value="myfamilies" (click)="gotoMyFamiliesPage()">

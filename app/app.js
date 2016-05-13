@@ -6,6 +6,7 @@ import {ConnectionsPage} from './pages/connections-page/connections-page';
 import {SettingsPage} from './pages/settings-page/settings-page';
 import {SearchPage} from './pages/search-page/search-page';
 
+
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 

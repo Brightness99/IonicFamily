@@ -9,7 +9,7 @@
 </ion-navbar>
 <ion-content class="cus-gray-bg">
 	<ion-list>
-		<ion-item class="avatar-item" *ngFor="#item of familiesList">
+		<ion-item class="avatar-item" *ngFor="#item of familiesList" (click)="gotoMessagePge(item)">
 			<ion-avatar item-left>
 				<img src="{{item.family_pic}}">
 			</ion-avatar>
