@@ -4,6 +4,7 @@ import {MainPage} from './pages/main-page/main-page';
 import {MyFamiliesPage} from './pages/myfamilies-page/myfamilies-page';
 import {ConnectionsPage} from './pages/connections-page/connections-page';
 import {SettingsPage} from './pages/settings-page/settings-page';
+import {SearchPage} from './pages/search-page/search-page';
 
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
@@ -31,8 +32,7 @@ class MyApp {
       {title: 'My Families', component: MyFamiliesPage},
       {title: 'Connections', component: ConnectionsPage},
       {title:  'Settings', component: SettingsPage},
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      {title: 'Search For A Family', component: SearchPage}
     ];
 
     // make HelloIonicPage the root (or first) page
