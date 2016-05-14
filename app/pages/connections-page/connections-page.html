@@ -4,7 +4,7 @@
   	</button>
   	<ion-title>Connections</ion-title>
 	<ion-buttons end>
-		<button >View</button>
+		<button (click)="gotoOptionsPage()">View</button>
 	</ion-buttons>
 </ion-navbar>
 <ion-content class="cus-gray-bg">
@@ -17,7 +17,7 @@
 			<div class="f10 cus-dark">{{item.message}}</div>
 			<div class="arrow-btn-wrapper">
 				<div class="f10 cus-dark">{{item.time}}</div>
-				<span><ion-icon name="arrow-forward"></ion-icon></span>
+				<span><ion-icon ios="ios-arrow-forward" md="ios-arrow-forward"></ion-icon></span>
 			</div>
 		</ion-item>
 	</ion-list> 

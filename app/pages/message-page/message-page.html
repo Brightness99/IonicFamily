@@ -1,8 +1,8 @@
 <ion-navbar *navbar  cus-blue>
-  	<ion-title>Josh & Robin</ion-title>
+  	<ion-title>{{title}}</ion-title>
 </ion-navbar>
 <ion-content class="message-content">
-	<div class="message-time">Today 9:02 PM</div>
+	<div class="message-time">Today 9:02 PM</div> 
 	<ion-list>
 		<ion-item class="message-item" *ngFor="#item of messageList">
 			<div class="flex" *ngIf="item.type=='recived'">

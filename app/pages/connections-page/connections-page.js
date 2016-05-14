@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {MessagePage} from '../message-page/message-page';
+import {OptionsPage} from '../options-page/options-page'
 
 @Page({
   	templateUrl: 'build/pages/connections-page/connections-page.html'
@@ -19,7 +20,11 @@ export class ConnectionsPage {
 	}
 
 	gotoMessagePge(item) { 
-        this.nav.push(MessagePage);
+        this.nav.push(MessagePage, {title: item.family_title});
+    }
+
+    gotoOptionsPage() {
+        this.nav.setRoot(OptionsPage);
     }
 }
  

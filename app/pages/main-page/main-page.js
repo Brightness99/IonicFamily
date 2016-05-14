@@ -2,6 +2,7 @@ import {Page, NavController, NavParams} from 'ionic-angular';
 import {MyFamiliesPage} from '../myfamilies-page/myfamilies-page'
 import {ConnectionsPage} from '../connections-page/connections-page'
 import {SearchPage} from '../search-page/search-page'
+import {OptionsPage} from '../options-page/options-page'
 
 @Page({
   	templateUrl: 'build/pages/main-page/main-page.html'
@@ -31,7 +32,11 @@ export class MainPage {
 	}
 
     gotoSearchPage() {
-        this.nav.setRoot(SearchPage);
+      this.nav.setRoot(SearchPage);
+    }
+
+    gotoOptionsPage() {
+        this.nav.setRoot(OptionsPage);
     }
 
 }

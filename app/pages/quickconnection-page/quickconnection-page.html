@@ -1,0 +1,42 @@
+<ion-content class="family-content hide-navbar-content cus-gray-bg">
+	<button class="top-back-btn" clear (click)="closePage()">
+		 <ion-icon ios="ios-close-circle" md="ios-close-circle" dark></ion-icon>
+	</button>
+	<ion-slides pager>
+		<ion-slide>
+			<img src="img/family1-medium.png">
+		</ion-slide>
+		<ion-slide>
+			<img src="img/family1-medium.png">
+		</ion-slide>
+		<ion-slide>
+			<img src="img/family1-medium.png">
+		</ion-slide>
+		<ion-slide>
+			<img src="img/family1-medium.png">
+		</ion-slide>
+		<ion-slide>
+			<img src="img/family1-medium.png">
+		</ion-slide>
+	</ion-slides>
+	<div class="family-desc-wrapper cus-white-bg">
+		<div class="f24 center">Josh & Robin</div>
+		<div class="desc f12">	We are blessed to have this opportunity to share our lives
+								with you! We have always dreamed of having a big family
+								but due to infertility our journey in life has lead us to
+								adoption. We where blessed with adopting in 2014 and
+								pray to be blessed once again thru the journey of adoption.
+		</div>
+	</div>
+	<div class="family-facts-warpper ">
+		<div class="f18 center">Family Facts</div>
+		<div class="f10 center location">Location: Brooklyn, New York . Children: 1</div>
+		<div class="down-icon-wrapper">
+			<ion-icon class="content-down-icon" ios="ios-arrow-dropdown-circle" md="ios-arrow-dropdown-circle" dark></ion-icon>
+		</div>
+	</div>
+</ion-content>
+<ion-toolbar position="bottom" class="family-toolbar">
+	<button class="left chat-icon" clear (click)="gotoConnectionsPage()">Connect</button>
+	<button class="right bookmark-icon" clear>Bookmark</button>
+</ion-toolbar>

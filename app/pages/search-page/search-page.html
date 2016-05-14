@@ -4,14 +4,14 @@
   	</button>
   	<ion-title>Search For A Family</ion-title>
 	<ion-buttons end>
-		<button >View</button>
+		<button (click)="gotoOptionsPage()">View</button>
 	</ion-buttons>
 </ion-navbar>
 <ion-content class="cus-gray-bg">
 	<ion-list>
 		<ion-item class="arrow-icon-item" *ngFor="#item of searchList">
 			{{item.searchTitle}}
-			<ion-icon name="arrow-forward" item-right></ion-icon>
+			<ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
 		</ion-item>
 	</ion-list>
  

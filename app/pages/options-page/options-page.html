@@ -2,15 +2,12 @@
   	<button menuToggle>
     	<ion-icon name="menu"></ion-icon>
   	</button>
-  	<ion-title>Settings</ion-title>
-	<ion-buttons end>
-		<button >Sign Out</button>
-	</ion-buttons>
+  	<ion-title>Viewing Options</ion-title>
 </ion-navbar>
 <ion-content class="cus-gray-bg">
 	<ion-list>
-		<ion-item class="arrow-icon-item" *ngFor="#item of settingsList">
-			{{item.settingTitle}}
+		<ion-item class="arrow-icon-item" *ngFor="#item of optionsList" (click)="gotoPages(item)">
+			{{item.optionTitle}}<span class="f10 cus-dark mg-l-20">{{item.subTitle}}</span>
 			<ion-icon ios="ios-arrow-forward" md="ios-arrow-forward" item-right></ion-icon>
 		</ion-item>
 	</ion-list>

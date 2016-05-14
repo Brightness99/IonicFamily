@@ -1,0 +1,120 @@
+
+.family-content {
+	button {
+		position: absolute;
+
+		z-index: 9999;
+
+		ion-icon {
+			font-size: 2.8rem;
+			line-height: .67;
+			pointer-events: none;
+			color: white;
+			background: black;
+			padding: 0;
+			border-radius: 50%;
+			font-weight: 500;
+			margin: 0 1rem;
+		}
+	}	
+	.top-back-btn {
+		left: 0;
+		top: 0;
+	}
+	.down-icon-wrapper {
+		position: absolute;
+		z-index: 9999;
+		top: -1.5rem;
+		left: 0;
+		width: 100%;
+		text-align: center;
+
+		ion-icon {
+			font-size: 2.8rem;	
+			pointer-events: none;
+			color: white;
+			background: black;
+			padding: 0;
+			border-radius: 50%;
+			font-weight: 500;
+			margin: 0 1rem;
+
+			line-height: .8;
+			border: 2px solid #e1e1e1;
+		}
+	}
+
+	ion-slides {
+		height: auto;
+		line-height: 0;
+
+		.swiper-slide {
+			align-items: inherit;
+		}
+		.swiper-pagination-bullet.swiper-pagination-bullet-active {
+			background-color: #f25c22;
+		}
+		.swiper-pagination-bullet {
+			background-color: #a5a5a5;
+			opacity: 1;
+			width: .9rem;
+			height: .9rem;
+			margin: 0 .4rem !important;
+		}
+	}
+
+	.family-desc-wrapper {
+		padding: 0.8rem 1.2rem;
+		div {
+			padding: .4rem;
+		}
+		.desc {
+			line-height: 2rem;
+			color: #666;
+		}
+	}
+	.family-facts-warpper {
+		position: relative;
+		padding: 1.2rem;
+		div {
+			padding: .2rem;
+		}
+		.location {
+			color: #666;
+		}
+	}
+}
+
+.family-toolbar {
+	.toolbar-background {
+		background-color: #0a9fcb;
+	}
+
+	.toolbar-content {
+		text-align: center;
+
+		.chat-icon {
+			background-image: url('../../img/chat-icon-white.png');
+			background-size: 21%;
+		}
+		.bookmark-icon {
+			background-image: url('../../img/bookmark-icon-white.png');
+			background-size: 15%;
+
+		}
+		button {
+			background-position: top center;
+			background-repeat: no-repeat;
+			padding-left: 3rem;
+			padding-right: 3rem;
+
+			span {
+				padding-top: 20px;
+				font-size: 1.4rem;
+				text-transform: capitalize;
+				font-weight: 300;
+				color: white
+			}
+		}
+	}
+}
