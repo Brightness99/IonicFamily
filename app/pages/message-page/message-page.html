@@ -31,8 +31,8 @@
 </ion-content> 
 <ion-toolbar position="bottom" class="message-toolbar">
 	<ion-item class="cus-gray-bg">
-		<ion-input type="text" placeholder="Type Your Messages..."></ion-input>
+		<ion-input type="text" placeholder="Type Your Messages..." [(ngModel)]="message.input"></ion-input>
 	</ion-item>
-	<button class="send-btn" clear>
+	<button class="send-btn" clear (click)="sendMessage()">
 	</button>
 </ion-toolbar>

@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {OptionsPage} from '../options-page/options-page'
+import {OptionsPage} from '../options-page/options-page';
+import {ConnectionsPage} from '../connections-page/connections-page';
 
 @Page({
   	templateUrl: 'build/pages/myfamilies-page/myfamilies-page.html'
@@ -26,6 +27,10 @@ export class MyFamiliesPage {
 
     gotoOptionsPage() {
         this.nav.setRoot(OptionsPage);
+    }
+
+    gotoConnectionsPage(item) {
+        this.nav.setRoot(ConnectionsPage);
     }
 
 

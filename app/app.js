@@ -13,9 +13,10 @@ import {OptionsPage} from './pages/options-page/options-page';
     templateUrl: 'build/app.html',
     // http://ionicframework.com/docs/v2/api/config/Config/
     config: {
+        scrollAssist: false,
         platforms: {
             ios: {
-                statusbarPadding: false
+                statusbarPadding: true
             }
         }
     },

@@ -15,7 +15,21 @@ export class MessagePage {
 		this.messageList = [
 			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'Yes, We are open to traveling to see you and your family for some of the major holidays during the year.'},
 			{type: 'sent', picture_url: 'img/family1-medium.png', message: 'Sounds good. We usually travel fro Xmas btw'},
-			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'We\'re totally open minded about it'}
+			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'We\'re totally open minded about it'},
+			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'Yes, We are open to traveling to see you and your family for some of the major holidays during the year.'},
+			{type: 'sent', picture_url: 'img/family1-medium.png', message: 'Sounds good. We usually...'},
+			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'We\'re totally open minded..'},
+			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'Yes, We are open to traveling to see you and your family for some of the major holidays during the year.'},
+			{type: 'sent', picture_url: 'img/family1-medium.png', message: 'Sounds good. We usually travel fro Xmas btw'},
+			{type: 'recived', picture_url: 'img/family1-medium.png', message: 'We\'re totally open minded about it'},
 		];
+
+		this.message = {};
+	}
+
+	sendMessage() {
+		var msg = new Object({type: 'sent', picture_url: '', message: this.message.input});
+		this.messageList.push(msg);
+		this.message.input = '';
 	}
 }
