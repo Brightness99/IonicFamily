@@ -1,5 +1,5 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {QuickconnectionPage} from '../quickconnection-page/quickconnection-page'
+import {QuickconnectionPage} from '../quickconnection-page/quickconnection-page';
 
 
 @Page({

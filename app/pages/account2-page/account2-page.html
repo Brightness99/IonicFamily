@@ -1,0 +1,43 @@
+<ion-content class="">
+	<div class="logo">
+		<img src="img/logo.png"/>
+	</div>
+	<div class="family-thumbnails">
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList1">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList2">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList3">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+	</div>
+	<div class="body-content">
+		<div class="body-content-inner">
+			<ion-list>
+				<ion-item>
+					<ion-label stacked>Zip Code</ion-label>
+					<ion-input type="text"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-label stacked>Create Your Username</ion-label>
+					<ion-input type="text"></ion-input>
+				</ion-item>
+
+			</ion-list>
+			<div class="f10">By choosing to continue, I certify that I have read and agree to the Adoption Connect <span><a>Terms of Use</a></span></div>
+		</div>
+	</div>
+	<div class="account-btn-content center">
+		<div><button class="cus-green-btn" (click)="gotoMainPage()">Continue</button></div>
+		<div><button clear class="cus-clear-btn" (click)="gotoLogin()">Sign In</button></div>
+	</div>
+</ion-content>

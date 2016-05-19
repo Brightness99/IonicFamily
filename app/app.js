@@ -8,6 +8,7 @@ import {SearchPage} from './pages/search-page/search-page';
 import {FamilyPage} from './pages/family-page/family-page';
 import {QuickconnectionPage} from './pages/quickconnection-page/quickconnection-page';
 import {OptionsPage} from './pages/options-page/options-page';
+import {IntroPage} from './pages/intro-page/intro-page';
 
 @App({
     templateUrl: 'build/app.html',
@@ -46,7 +47,7 @@ class MyApp {
         ];
 
         // make HelloIonicPage the root (or first) page
-        this.rootPage = MainPage;
+        this.rootPage = IntroPage;
     }
 
     initializeApp() {

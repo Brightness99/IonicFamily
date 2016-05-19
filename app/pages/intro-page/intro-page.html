@@ -1,0 +1,43 @@
+<ion-content class="">
+	<div class="logo">
+		<img src="img/logo.png"/>
+	</div>
+	<div class="family-thumbnails">
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList1">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList2">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+		<ion-row>
+		  	<ion-col width-10 *ngFor="#item of thumnailList3">
+		  		<img src="{{item.picture_url}}"/>
+		  	</ion-col>
+		</ion-row>
+	</div>
+	<div class="body-content">
+		<ion-slides pager>
+
+			<ion-slide center>
+				<div class="f14">Start your free account. It only takes a minute to join. It’s <span class="bold">totally safe</span> and your privacy is 100% protected.</div>
+			</ion-slide>
+
+			<ion-slide center>
+				<div class="f14">View and connect with great families who are <span class="bold">adoption approved</span> (with a current, valid home study and a full background check).</div>
+			</ion-slide>
+
+			<ion-slide center>
+				<div class="f14">Find families in your state - or anywhere else. Search for <span class="bold">exactly</span> the type of family you want to connect with. </div>
+			</ion-slide>
+
+		</ion-slides>
+	</div>
+	<div class="account-btn-content center">
+		<div><button class="cus-green-btn" (click)="gotoAccount1Page()">Join Us</button></div>
+		<div><button clear class="cus-clear-btn" (click)="gotoLogin()">Sign In</button></div>
+	</div>
+</ion-content>

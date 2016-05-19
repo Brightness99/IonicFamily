@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams} from 'ionic-angular';
+import {Page, NavController, NavParams, Loading} from 'ionic-angular';
 import {MyFamiliesPage} from '../myfamilies-page/myfamilies-page'
 import {ConnectionsPage} from '../connections-page/connections-page'
 import {SearchPage} from '../search-page/search-page'
@@ -21,6 +21,7 @@ export class MainPage {
   			{family_pic: 'img/family1-medium.png', family_title: 'Josh & Robin', location: 'New York, NY'},
   			{family_pic: 'img/family1-medium.png', family_title: 'Josh & Robin', location: 'New York, NY'}
   		];
+        this.presentLoadingDefault();
   		
   	}
     gotoMyFamiliesPage() { 
@@ -38,5 +39,17 @@ export class MainPage {
     gotoOptionsPage() {
         this.nav.setRoot(OptionsPage);
     }
+
+    presentLoadingDefault() {
+        let loading = Loading.create({
+            content: 'Please wait...'
+        });
+
+        this.nav.present(loading);
+
+        setTimeout(() => {
+            loading.dismiss();
+        }, 500);
+      }
 
 }
